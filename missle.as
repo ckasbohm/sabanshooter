@@ -13,14 +13,14 @@
 		this.removeMovieClip();
 	}
 	
-	for(var i in _root.ship1.enemies)
+	for(var i in _root.ship.enemies)
 	{
-		if(this.hitTest(_root.ship1.enemies[i]))
+		if(this.hitTest( _root.ship.enemies[i] ) )
 		{
-			this.removeMovieClip();
-			_root.ship1.enemies[i].explode();
+		this.removeMovieClip();
+		_root.ship.enemies[i].explode();
 		}
-	}
+}
 	
 	}
 }
